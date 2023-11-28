@@ -1,9 +1,9 @@
-// Import statements...
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from './HomeScreen';
-import DetailsScreen from './DetailsScreen';
+import ThresholdScreen from './ThresholdScreen';
+import HistoryScreen from './HistoryScreen';
 
 const Stack = createStackNavigator();
 
@@ -12,7 +12,8 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="Thresholds" component={ThresholdScreen} />
+        <Stack.Screen name="History" component={HistoryScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
